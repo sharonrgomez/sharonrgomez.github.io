@@ -13,6 +13,10 @@
   object-fit: cover;
 }
 
+p{
+  min-height: 75px;
+}
+
 i {
   padding-right: 5px;
 }
