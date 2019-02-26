@@ -1,4 +1,4 @@
-var myUrl = "http://api.aerisapi.com/observations/10470?client_id=bztqTzogbfkse9jYTOTi7&client_secret=25AvdRwi0aGuFcasRG1wNXIXCZCsiXuut9PqKge9";
+var myUrl = "https://api.aerisapi.com/observations/10470?client_id=bztqTzogbfkse9jYTOTi7&client_secret=25AvdRwi0aGuFcasRG1wNXIXCZCsiXuut9PqKge9";
 var myZip = document.getElementById('zip');
 
 function getWeather(myZip){
