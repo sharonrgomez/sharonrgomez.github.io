@@ -1,44 +1,22 @@
 body {
   padding-top: 50px;
+  background: url("https://images.unsplash.com/photo-1548924607-fd498b796071?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=1050&q=80");
+  background-size: cover;
+  background-position: center;
 }
 
-.jumbotron {
-  background: url("https://i.imgur.com/NSm439o.jpg") center center / cover;
-  height: 250px;
-  filter: opacity(80%);
+html {
+  height: 100%;
 }
 
-.jumbotron h1 {
+#content {
+  padding-top: 18%;
+}
+
+#content h1 {
   text-shadow: 5px 5px #000;
-}
-
-.lead {
-  color: black;
-  text-shadow: 1px 1px #fff;
-}
-/*
-.card-img-top {
-width: 100%;
-height: .50*width;
-object-fit: cover;
-} */
-
-.card-text {
-  min-height: 75px;
 }
 
 i {
   padding-right: 5px;
-}
-
-.btn {
-  /* height: 30px; */
-}
-
-.card {
-  border: 1.5px solid rgba(0,0,0,.1);
-}
-
-.langs {
-  color: rgba(0,0,0,.25);
 }
