@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
   <link rel="stylesheet" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Sharon R Levin</title>
 </head>
 
@@ -15,74 +16,99 @@
   <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
     <div class="container-fluid">
       <a class="navbar-brand" href="#"><i class="fas fa-angle-double-right"></i>shaerins</a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse" id="navbarNavDropdown">
-        <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link" href="#">Resume</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="#">Contact</a>
-          </li>
-        </ul>
-      </div>
-    </div>
-  </nav>
+      <!-- <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+    <ul class="navbar-nav">
+    <li class="nav-item">
+    <a class="nav-link" href="#">Resume</a>
+  </li>
+  <li class="nav-item">
+  <a class="nav-link" href="#">Contact</a>
+</li>
+</ul>
+</div> -->
+</div>
+</nav>
 
-  <!-- header/jumbotron -->
-  <section id="header" class="jumbotron text-center text-light">
-    <h1 class="display-3">Sharon R Levin</h1>
-    <p class="lead">An aspiring web developer based in NYC.</p>
-  </section>
+<!-- header/jumbotron -->
+<section id="header" class="jumbotron text-center text-light">
+  <h1 class="display-3">Sharon R Levin</h1>
+  <p class="lead">An aspiring web developer based in NYC.</p>
+</section>
 
 
-  <!-- projects gallery -->
-  <section id="gallery">
-    <div class="container-fluid">
-      <div class="row">
-        <div class="col-lg-6 col-xl-4 mb-3">
-          <div class="card">
-            <img class="card-img-top" src="https://i.imgur.com/qmDnuVx.jpg">
-            <div class="card-body">
-              <h5 class="card-title">hoodie</h5>
-              <p class="card-text">Find out if the weather is currently suitable for wearing a hoodie outside.</p>
-              <a href="./hoodie/index.html" target="_blank" class="btn btn-sm btn-outline-info">Check it out!</a>
-              <!-- put footer -->
-            </div>
-          </div>
-        </div>
+<!-- projects gallery -->
+<section id="gallery">
+  <div class="container-fluid">
+    <div class="row">
 
-        <div class="col-lg-6 col-xl-4 mb-3">
-          <div class="card">
-            <img class="card-img-top" src="https://i.imgur.com/Vj6Ysal.jpg">
-            <div class="card-body">
-              <h5 class="card-title">imgs</h5>
-              <p class="card-text">A place to showcase your photography to the world.</p>
-              <a href="./image-gallery/index.html" target="_blank" class="btn btn-sm btn-outline-info">Check it out!</a>
-            </div>
-          </div>
-        </div>
-
-        <div class="col-lg-6 col-xl-4 mb-3">
-          <div class="card">
-            <img class="card-img-top" src="https://i.imgur.com/6ipgbcR.jpg">
-            <div class="card-body">
-              <h5 class="card-title">rewrite</h5>
-              <p class="card-text">A minimal blog where you can gather your thoughts.</p>
-              <a href="./text-blog/index.html" target="_blank" class="btn btn-sm btn-outline-info">Check it out!</a>
+      <div class="col-lg-6 col-xl-4 mb-3">
+        <div class="card">
+          <!-- <img class="card-img-top" src="https://i.imgur.com/qmDnuVx.jpg"> -->
+          <div class="card-body">
+            <h5 class="card-title">hoodie</h5>
+            <p class="card-text">Find out if the weather is currently suitable for wearing a hoodie outside.</p>
+            <div class="d-flex">
+              <div class="p-2"><a href="./hoodie/index.html" target="_blank" class="btn btn-sm btn-outline-info">Check it out!</a></div>
+              <div class="p-2"><a href="https://github.com/shaerins/hoodie" target="_blank" class="btn btn-sm btn-outline-warning">Source</a></div>
+              <div class="p-2 ml-auto"><span class="langs">HTML/CSS, JavaScript, MDL</span></div>
             </div>
           </div>
         </div>
       </div>
 
+      <div class="col-lg-6 col-xl-4 mb-3">
+        <div class="card">
+          <!-- <img class="card-img-top" src="https://i.imgur.com/Vj6Ysal.jpg"> -->
+          <div class="card-body">
+            <h5 class="card-title">imgs</h5>
+            <p class="card-text">A place to showcase your photography to the world.</p>
+            <div class="d-flex">
+              <div class="p-2"><a href="./image-gallery/index.html" target="_blank" class="btn btn-sm btn-outline-info">Check it out!</a></div>
+              <div class="p-2"><a href="https://github.com/shaerins/image-gallery" target="_blank" class="btn btn-sm btn-outline-warning">Source</a></div>
+              <div class="p-2 ml-auto"><span class="langs">HTML/CSS, Bootstrap3</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
 
+      <div class="col-lg-6 col-xl-4 mb-3">
+        <div class="card">
+          <!-- <img class="card-img-top" src="https://i.imgur.com/6ipgbcR.jpg"> -->
+          <div class="card-body">
+            <h5 class="card-title">rewrite</h5>
+            <p class="card-text">A minimal blog where you can gather your thoughts.</p>
+            <div class="d-flex">
+              <div class="p-2"><a href="./text-blog/index.html" target="_blank" class="btn btn-sm btn-outline-info">Check it out!</a></div>
+              <div class="p-2"><a href="https://github.com/shaerins/text-blog" target="_blank" class="btn btn-sm btn-outline-warning">Source</a></div>
+              <div class="ml-auto p-2"><span class="langs">HTML/CSS</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="col-lg-6 col-xl-4 mb-3">
+        <div class="card">
+          <!-- <img class="card-img-top" src="https://i.imgur.com/6ipgbcR.jpg"> -->
+          <div class="card-body">
+            <h5 class="card-title">home</h5>
+            <p class="card-text">The page you're on right now!</p>
+            <div class="d-flex">
+              <div class="p-2"><a href="./text-blog/index.html" target="_blank" class="btn btn-sm btn-outline-info">Check it out!</a></div>
+              <div class="p-2"><a href="https://github.com/shaerins/shaerins.github.io" target="_blank" class="btn btn-sm btn-outline-warning">Source</a></div>
+              <div class="ml-auto p-2"> <span class="langs">HTML/CSS, Bootstrap4</span></div>
+            </div>
+          </div>
+        </div>
+      </div>
 
     </div>
-  </section>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+
+  </div>
+</section>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1/jquery.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
 </body>
-
 </html>

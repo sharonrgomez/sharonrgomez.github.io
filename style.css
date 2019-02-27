@@ -16,17 +16,29 @@ body {
   color: black;
   text-shadow: 1px 1px #fff;
 }
-
+/*
 .card-img-top {
-  width: 100%;
-  height: .50*width;
-  object-fit: cover;
-}
+width: 100%;
+height: .50*width;
+object-fit: cover;
+} */
 
-p {
+.card-text {
   min-height: 75px;
 }
 
 i {
   padding-right: 5px;
+}
+
+.btn {
+  /* height: 30px; */
+}
+
+.card {
+  border: 1.5px solid rgba(0,0,0,.1);
+}
+
+.langs {
+  color: rgba(0,0,0,.25);
 }
