@@ -3,6 +3,13 @@ body {
   font-family: 'Open Sans';
 }
 
+@media (min-width: 1500px){
+  #images {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+
 .jumbotron {
   color: #2c3e50;
   background: #ecf0f1;
