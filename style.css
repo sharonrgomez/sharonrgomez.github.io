@@ -9,6 +9,10 @@ html {
   height: 100%;
 }
 
+i {
+  padding-right: 8px;
+}
+
 #content {
   padding-top: 18%;
 }
@@ -17,6 +21,25 @@ html {
   text-shadow: 5px 5px #000;
 }
 
-i {
-  padding-right: 5px;
+@media (max-width: 600px) {
+  #content h1 {
+    font-size: 3.2rem;
+    text-shadow: 3px 3px #000;
+  }
+
+  #content {
+    padding-top: 35%;
+  }
+}
+
+#navLinks .nav-link {
+  color: white;
+}
+
+#navLinks .nav-link:hover {
+  color: #c0a0ff;
+}
+
+.navbar-dark .navbar-toggler {
+  color: #e9e9e9;
 }
