@@ -5,6 +5,10 @@ body {
   background-position: center;
 }
 
+html {
+  height: 100%;
+}
+
 .title {
   background-color: rgba(255,255,255,0);
   color: #fff;
@@ -19,9 +23,10 @@ body {
   font-size: .8rem;
 }
 
-.btn-group-sm>.btn, .btn-sm {
-  padding: 1rem 1rem;
-  font-size: .8rem;
-  line-height: 1.5;
-  border-radius: .2rem;
+p {
+  height: 75px;
+}
+
+.card-footer {
+  height: 55px;
 }
