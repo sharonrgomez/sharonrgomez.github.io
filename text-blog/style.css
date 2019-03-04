@@ -5,6 +5,7 @@ body{
   border: 20px solid #bdc3c7;
   border-radius: 25px;
   padding: 2%;
+  padding-top: .75%;
   font-family: "Source Sans Pro";
   text-align: justify;
 }

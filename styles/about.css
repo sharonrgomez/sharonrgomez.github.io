@@ -3,6 +3,15 @@ body {
   background: url("../imgs/bg.jpg");
   background-size: cover;
   background-position: center;
+  user-select: none;
+}
+
+@media (max-width: 425px) {
+  body {
+    background: url("../imgs/bg-mobile.jpg");
+    background-size: cover;
+    background-position: center;
+  }
 }
 
 html {
