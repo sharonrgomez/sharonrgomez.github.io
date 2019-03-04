@@ -1,12 +1,9 @@
-* {
-	font-family: muli;
-}
-
 body {
-	background-image: url("https://i.imgur.com/g8kKfnh.jpg");
+	background-image: url("bg.png");
 	background-size: cover;
 	background-position: center;
 	font-size: 16px;
+	font-family: "Muli";
 }
 
 html {
@@ -30,8 +27,7 @@ main h3 {
 
 #head {
 	margin-bottom: -1px;
-	font-family: Muli;
-	font-weight: bold;
+	/* font-weight: bold; */
 	font-size: 3rem;
 }
 
@@ -96,4 +92,5 @@ input:-webkit-autofill:active  {
 #weather {
 	font-size: 0.7em;
 	text-transform: capitalize;
+	line-height: 150%;
 }
