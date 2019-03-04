@@ -7,11 +7,11 @@ body {
   user-select: none;
 }
 
-@media (max-width: 425px) {
+@media (max-width: 990px) {
   body {
-    background: url("../imgs/bg-mobile.jpg");
-    background-size: cover;
-    background-position: center;
+    background: none;
+    background-color: #637799;
+
   }
 }
 
