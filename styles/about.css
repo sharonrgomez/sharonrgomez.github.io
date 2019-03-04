@@ -3,20 +3,41 @@ body {
   background: url("../imgs/bg.jpg");
   background-size: cover;
   background-position: center;
-  font-family: "Amatic SC";
 }
 
 html {
   height: 100%;
 }
 
+#content {
+  padding-top: 8%;
+  color: white;
+  text-shadow: 2px 2px #333;
+  font-size: 1.3rem;
+  font-family: "Questrial";
+  line-height: 1.3;
+}
+
+#content h1 {
+  font-family: "Amatic SC";
+}
+
 #me {
   width: 200px;
+  filter: opacity(85%);
   border-radius: 50%;
   box-shadow: 2px 2px 5px 0 #333;
 }
 
-#content {
-  color: white;
-  text-shadow: 2px 2px #333;
+#me:hover {
+  filter: opacity(95%);
+}
+@media (max-width: 700px) {
+  #content {
+    font-size: .95rem;
+  }
+
+  #me {
+    width: 100px;
+  }
 }
