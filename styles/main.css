@@ -3,6 +3,8 @@ body {
   background: url("../imgs/bg.jpg");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   font-family: "Amatic SC";
   user-select: none;
 }
@@ -12,6 +14,8 @@ body {
     background: url("../imgs/bg-mobile.jpg");
     background-size: cover;
     background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
 }
 

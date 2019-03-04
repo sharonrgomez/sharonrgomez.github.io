@@ -3,15 +3,19 @@ body {
   background: url("../imgs/bg.jpg");
   background-size: cover;
   background-position: center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   font-family: "Questrial";
   user-select: none;
 }
 
 @media (max-width: 990px) {
   body {
-    background: none;
-    background-color: #637799;
-
+    background: url("../imgs/bg-mobile.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
   }
 }
 
