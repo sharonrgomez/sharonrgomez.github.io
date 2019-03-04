@@ -1,5 +1,5 @@
 body{
-  margin: 8px auto; 
+  margin: 8px auto;
   max-width: 700px;
   width: 80%;
   border: 20px solid #bdc3c7;
@@ -22,17 +22,16 @@ body{
   color: #2c3d50;
   font-weight: 700;
   margin-top: 10px;
-  margin-bottom: 0;
-
+  margin-bottom: 10px;
 }
 
 .quote{
   border-left: 6px solid #bdc3c7;
-  padding: 1%; 
+  padding-left: 1%;
 }
 
 div{
-  border-bottom: 2px solid #bdc3c7;  
+  border-bottom: 2px solid #bdc3c7;
 }
 
 div:last-of-type{
