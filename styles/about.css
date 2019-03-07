@@ -44,3 +44,7 @@ html {
     width: 100px;
   }
 }
+
+#content img {
+  width: 75px;
+}
