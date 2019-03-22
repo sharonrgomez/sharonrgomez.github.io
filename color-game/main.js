@@ -61,6 +61,7 @@ resetButton.addEventListener("click", function(){
     blobs[i].style.backgroundColor = colors[i];
   }
   header.style.backgroundColor = "#a5a5a5";
+  messageDisplay.textContent = "";
   resetButton.textContent = "Reset"
 });
 
