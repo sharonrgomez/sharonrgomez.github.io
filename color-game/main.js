@@ -24,6 +24,7 @@ easyButton.addEventListener("click", function(){
       blobs[i].style.display = "none";
     }
   }
+  messageDisplay.textContent = "";
   resetButton.textContent = "Reset";
   header.style.backgroundColor = "#a5a5a5";
 });
@@ -42,6 +43,7 @@ hardButton.addEventListener("click", function(){
   }
   resetButton.textContent = "Reset";
   header.style.backgroundColor = "#a5a5a5";
+  messageDisplay.textContent = "";
 });
 
 resetButton.addEventListener("click", function(){
