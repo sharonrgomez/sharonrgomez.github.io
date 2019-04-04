@@ -26,7 +26,7 @@ html {
 }
 
 #me {
-  width: 200px;
+  width: 300px;
   filter: opacity(85%);
   border-radius: 50%;
   box-shadow: 2px 2px 5px 0 #333;
@@ -41,7 +41,7 @@ html {
   }
 
   #me {
-    width: 100px;
+    width: 150px;
   }
 }
 
