@@ -170,11 +170,10 @@
 
   var circles = [];
 
-// when a key is pressed
+// when a key is pressed, create random point to place circle & play corresponding key sound
   function onKeyDown(event) {
-    // if the key is in 'keys' dictionary
     if(keys[event.key]){
-      // creates point coordinates that will be random but will stay within height/width of screen
+      // creates point coordinates that are random but stay within height/width of screen
       var maxPoint = new Point(view.size.width, view.size.height);
       var randomPoint = Point.random();
       var point = maxPoint * randomPoint;
