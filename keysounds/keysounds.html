@@ -170,7 +170,7 @@
 
   var circles = [];
 
-// when a key is pressed, create random point to place circle & play corresponding key sound
+  // when a key is pressed, create random point to place circle & play corresponding key sound
   function onKeyDown(event) {
     if(keys[event.key]){
       // creates point coordinates that are random but stay within height/width of screen
@@ -189,6 +189,10 @@
     for(var i = 0; i < circles.length; i++) {
       circles[i].fillColor.hue += 1.5;
       circles[i].scale(0.9);
+      if(circles[i].area < 1){
+        circles[i].remove(); // remove the circle from the canvas
+        circles.splice(i, 1); // remove the circle from the array
+      }
     }
   }
   </script>
