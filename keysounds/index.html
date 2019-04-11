@@ -169,9 +169,27 @@
   }
 
   var circles = [];
+  var prompt = true;
+
+  var text = new PointText(view.center);
+  text.content = 'Press any key...';
+  text.style = {
+    fontFamily: 'Courier New',
+    fontWeight: 'bold',
+    fontSize: 20,
+    fillColor: 'white',
+    justification: 'center'
+  };
 
   // when a key is pressed, create random point to place circle & play corresponding key sound
   function onKeyDown(event) {
+    if(prompt) {
+      // remove center text, set prompt boolean to false
+      text.style = {
+        fillColor: '#2a2a2a'
+      };
+      prompt = false;
+    }
     if(keys[event.key]){
       // creates point coordinates that are random but stay within height/width of screen
       var maxPoint = new Point(view.size.width, view.size.height);
