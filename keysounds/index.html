@@ -172,22 +172,21 @@
   var prompt = true;
 
   var text = new PointText(view.center);
-  text.content = 'Press any key...';
+  text.content = 'turn up your volume and press any key...';
   text.style = {
-    fontFamily: 'Courier New',
+    fontFamily: 'Century Gothic',
     fontWeight: 'bold',
     fontSize: 20,
     fillColor: 'white',
-    justification: 'center'
+    justification: 'center',
+    transition: "0.2s linear"
   };
 
   // when a key is pressed, create random point to place circle & play corresponding key sound
   function onKeyDown(event) {
     if(prompt) {
       // remove center text, set prompt boolean to false
-      text.style = {
-        fillColor: '#2a2a2a'
-      };
+      text.fillColor ="rgba(0,0,0,0)";
       prompt = false;
     }
     if(keys[event.key]){
