@@ -1,5 +1,16 @@
+html {
+    height: 100%;
+}
+/* body {
+    height: 100%;
+    margin: 0;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+} */
+
 body {
   font-family: Roboto;
+  background-image: linear-gradient(to bottom right, #93edd7, #f6ff42);
 }
 
 h1 {
