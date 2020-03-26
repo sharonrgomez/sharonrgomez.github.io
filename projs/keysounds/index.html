@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>keysounds</title>
+  <script src="paper-full.js" charset="utf-8"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/howler/2.1.1/howler.js" charset="utf-8"></script>
+  <link rel="stylesheet" href="style.css">
+  <script type="text/paperscript" canvas="myCanvas">
+
+  // assign a color and sound to each key
+  var keys = {
+    q: {
+      color: "#800000",
+      sound: new Howl({
+        src: ["sounds/bubbles.mp3"]
+      })
+    },
+    w: {
+      color: "#9A6324",
+      sound: new Howl({
+        src: ["sounds/clay.mp3"]
+      })
+    },
+    e: {
+      color: "#808000",
+      sound: new Howl({
+        src: ["sounds/confetti.mp3"]
+      })
+    },
+    r: {
+      color: "#469990",
+      sound: new Howl({
+        src: ["sounds/corona.mp3"]
+      })
+    },
+    t: {
+      color: "#000075",
+      sound: new Howl({
+        src: ["sounds/dotted-spiral.mp3"]
+      })
+    },
+    y: {
+      color: "#e6194B",
+      sound: new Howl({
+        src: ["sounds/flash-1.mp3"]
+      })
+    },
+    u: {
+      color: "#f58231",
+      sound: new Howl({
+        src: ["sounds/flash-2.mp3"]
+      })
+    },
+    i: {
+      color: "#ffe119",
+      sound: new Howl({
+        src: ["sounds/flash-3.mp3"]
+      })
+    },
+    o: {
+      color: "#04f7ce",
+      sound: new Howl({
+        src: ["sounds/glimmer.mp3"]
+      })
+    },
+    p: {
+      color: "#bfef45",
+      sound: new Howl({
+        src: ["sounds/moon.mp3"]
+      })
+    },
+    a: {
+      color: "#3cb44b",
+      sound: new Howl({
+        src: ["sounds/pinwheel.mp3"]
+      })
+    },
+    s: {
+      color: "#28a4e3",
+      sound: new Howl({
+        src: ["sounds/piston-1.mp3"]
+      })
+    },
+    d: {
+      color: "#4363d8",
+      sound: new Howl({
+        src: ["sounds/piston-2.mp3"]
+      })
+    },
+    f: {
+      color: "#911eb4",
+      sound: new Howl({
+        src: ["sounds/piston-3.mp3"]
+      })
+    },
+    g: {
+      color: "#f032e6",
+      sound: new Howl({
+        src: ["sounds/prism-1.mp3"]
+      })
+    },
+    h: {
+      color: "#a9a9a9",
+      sound: new Howl({
+        src: ["sounds/prism-2.mp3"]
+      })
+    },
+    j: {
+      color: "#fabebe",
+      sound: new Howl({
+        src: ["sounds/prism-3.mp3"]
+      })
+    },
+    k: {
+      color: "#ffd8b1",
+      sound: new Howl({
+        src: ["sounds/splits.mp3"]
+      })
+    },
+    l: {
+      color: "#fffac8",
+      sound: new Howl({
+        src: ["sounds/squiggle.mp3"]
+      })
+    },
+    z: {
+      color: "#aaffc3",
+      sound: new Howl({
+        src: ["sounds/strike.mp3"]
+      })
+    },
+    x: {
+      color: "#28a4e3",
+      sound: new Howl({
+        src: ["sounds/suspension.mp3"]
+      })
+    },
+    c: {
+      color: "#e6beff",
+      sound: new Howl({
+        src: ["sounds/timer.mp3"]
+      })
+    },
+    v: {
+      color: "#aa6633",
+      sound: new Howl({
+        src: ["sounds/ufo.mp3"]
+      })
+    },
+    b: {
+      color: "#eedddd",
+      sound: new Howl({
+        src: ["sounds/veil.mp3"]
+      })
+    },
+    n: {
+      color: "#ffa5a5",
+      sound: new Howl({
+        src: ["sounds/wipe.mp3"]
+      })
+    },
+    m: {
+      color: "#b0cdff",
+      sound: new Howl({
+        src: ["sounds/zig-zag.mp3"]
+      })
+    }
+  }
+
+  var circles = [];
+  var prompt = true;
+
+  var text = new PointText(view.center);
+  text.content = 'turn up your volume and press any key...';
+  text.style = {
+    fontFamily: 'Century Gothic',
+    fontWeight: 'bold',
+    fontSize: 20,
+    fillColor: 'white',
+    justification: 'center',
+    transition: "0.2s linear"
+  };
+
+  // when a key is pressed, create random point to place circle & play corresponding key sound
+  function onKeyDown(event) {
+    if(prompt) {
+      // remove center text, set prompt boolean to false
+      text.fillColor ="rgba(0,0,0,0)";
+      prompt = false;
+    }
+    if(keys[event.key]){
+      // creates point coordinates that are random but stay within height/width of screen
+      var maxPoint = new Point(view.size.width, view.size.height);
+      var randomPoint = Point.random();
+      var point = maxPoint * randomPoint;
+      var newCircle = new Path.Circle(point, 500);
+      // grabs color & sound from 'keys' object
+      newCircle.fillColor = keys[event.key].color;
+      keys[event.key].sound.play();
+      circles.push(newCircle);
+    }
+  }
+
+  function onFrame(event) {
+    for(var i = 0; i < circles.length; i++) {
+      circles[i].fillColor.hue += 1.5;
+      circles[i].scale(0.9);
+      if(circles[i].area < 1){
+        circles[i].remove(); // remove the circle from the canvas
+        circles.splice(i, 1); // remove the circle from the array
+      }
+    }
+  }
+  </script>
+</head>
+<body>
+  <canvas id="myCanvas" resize></canvas>
+</body>
+</html>

@@ -22,6 +22,10 @@ html {
 
 .langs {
   font-size: .7rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  word-break: break-word;
 }
 
 p {

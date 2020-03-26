@@ -1,0 +1,45 @@
+body {
+  padding-top: 70px;
+  font-family: 'Open Sans';
+}
+
+@media (min-width: 1500px){
+  #images {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+
+.jumbotron {
+  color: #2c3e50;
+  background: #ecf0f1;
+  font-weight: bold;
+}
+
+.navbar-inverse {
+  background: #2c3e50;
+}
+
+.navbar-inverse .navbar-nav>li>a {
+  color: white;
+}
+
+.navbar-inverse .navbar-nav>li>a:hover{
+  color: #a1a1a1;
+}
+
+.navbar-inverse .navbar-brand {
+  color: white;
+}
+
+.navbar-inverse .navbar-brand:hover{
+  color: #a1a1a1;
+}
+
+img{
+    filter: opacity(90%);
+}
+
+img:hover{
+    filter: opacity(100%);
+}

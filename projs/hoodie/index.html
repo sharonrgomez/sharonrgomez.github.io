@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link rel="shortcut icon" type="image/x-icon" href="favicon.ico" />
+	<meta content="width=device-width, initial-scale=1" name="viewport" />
+	<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+	<link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.blue_grey-lime.min.css">
+	<link href="https://fonts.googleapis.com/css?family=Muli:400,700" rel="stylesheet">
+	<link href="./style.css" type="text/css" rel="stylesheet"/>
+	<title>Can I Wear a Hoodie Today?</title>
+</head>
+<body>
+	<div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+		<header class="mdl-layout__header">
+			<div class="mdl-layout__header-row">
+				<h2 id="head">Can I Wear a Hoodie Today?</h2>
+			</div>
+		</header>
+
+		<main class="mdl-layout__content">
+			<h3>Let's check the weather...</h3>
+			<form onsubmit="return false">
+				<div class="mdl-textfield mdl-js-textfield">
+					<input class="mdl-textfield__input" type="text" id="zip"/>
+					<label class="mdl-textfield__label" for="zip"><center>Your zip code</center></label>
+				</div>
+				<br><button class="mdl-button mdl-js-button mdl-button--raised mdl-js-ripple-effect mdl-button--accent" type = "submit" value = "Go" onclick = "getWeather(zip.value)">Go</button>
+			</form>
+
+			<b><div id="hoodie"></div></b>
+			<h3><div id="weather"></div></h3>
+		</div>
+	</main>
+</div>
+</div>
+<script type="text/javascript" src="weather.js"></script>
+<script src="https://code.jquery.com/jquery.min.js"></script>
+<script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+</body>
+</html>

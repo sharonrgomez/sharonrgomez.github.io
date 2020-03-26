@@ -1,0 +1,96 @@
+body {
+	background-image: url("bg.png");
+	background-size: cover;
+	background-position: center;
+	font-size: 16px;
+	font-family: "Muli";
+}
+
+html {
+	height: 100%;
+}
+
+main h3 {
+	margin-bottom: 0px;
+	font-size: 25px;
+}
+
+.mdl-layout__header-row {
+	height: 60px;
+}
+
+@media (min-width: 500px) {
+	.mdl-layout__header-row {
+		height: 100px;
+	}
+}
+
+#head {
+	margin-bottom: -1px;
+	/* font-weight: bold; */
+	font-size: 3rem;
+}
+
+@media (max-width: 600px) {
+	#head {
+		font-size: 2.4rem;
+	}
+}
+
+@media (max-width: 500px) {
+	#head {
+		font-size: 1.5rem;
+	}
+}
+
+.mdl-layout__header-row {
+	padding: 0px 20px;
+}
+
+.mdl-layout__content {
+	text-align: center;
+	padding-top: 13%;
+	color: white;
+	text-shadow: 0px 4px 3px rgba(0,0,0,0.4),
+	0px 8px 13px rgba(0,0,0,0.1),
+	0px 18px 23px rgba(0,0,0,0.1);
+}
+
+.mdl-textfield__input {
+	color: white;
+	text-shadow: none;
+	text-align: center;
+	font-size: 18px;
+}
+
+.mdl-textfield__label {
+	color: #fff;
+	text-shadow:none;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active  {
+	-webkit-box-shadow: 0 0 0 30px white inset !important;
+}
+
+.mdl-button--accent.mdl-button--accent.mdl-button--raised, .mdl-button--accent.mdl-button--accent.mdl-button--fab {
+	color: rgb(66,66,66);
+	background-color: #fff;
+}
+
+#hoodie {
+	padding-top: 25px;
+	text-align: center;
+	margin-left: auto;
+	margin-right: auto;
+	font-size: 1.6em;
+	line-height: 1.3;
+}
+
+#weather {
+	font-size: 0.7em;
+	text-transform: capitalize;
+	line-height: 150%;
+}
