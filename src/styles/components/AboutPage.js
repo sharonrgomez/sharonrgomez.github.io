@@ -1,6 +1,9 @@
 import { makeStyles } from "@material-ui/core/styles";
 
 const aboutStyles = makeStyles((theme) => ({
+    textCentered: {
+        textAlign: "center",
+    },
     iconSize: {
         fontSize: "3rem",
         color: "#7457bd"

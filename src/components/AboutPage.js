@@ -8,6 +8,7 @@ import { MuiThemeProvider } from "@material-ui/core/styles";
 import { bgTheme, baseStyles } from "../styles/base";
 import aboutStyles from "../styles/components/AboutPage";
 import me from "../assets/me.png";
+import clsx from 'clsx';
 
 const AboutPage = () => {
     const baseClasses = baseStyles();
@@ -16,7 +17,7 @@ const AboutPage = () => {
         <>
             <MuiThemeProvider theme={bgTheme}>
                 <CssBaseline />
-                <main className={baseClasses.content}>
+                <main className={clsx(classes.textCentered, baseClasses.content)}>
                     <div className={classes.container}>
                         <img src={me} className={classes.image} />
                         <div className={classes.about}>

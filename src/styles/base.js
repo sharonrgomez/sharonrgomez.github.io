@@ -13,7 +13,6 @@ const baseStyles = makeStyles((theme) => ({
     content: {
         flexGrow: 1,
         position: "relative",
-        textAlign: "center",
         // screens smaller than md
         [theme.breakpoints.down("md")]: {
             padding: "25vh 1.5rem 1rem 1.5rem"
