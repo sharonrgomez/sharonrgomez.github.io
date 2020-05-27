@@ -7,7 +7,8 @@
     "server": "live-server public/",
     "build": "webpack",
     "dev-server": "webpack-dev-server",
-    "start": "node server/server.js"
+    "start": "node server/server.js",
+    "deploy": "node deploy.js"
   },
   "author": "Sharon Levin",
   "license": "ISC",
@@ -38,6 +39,7 @@
     "webpack-cli": "^3.3.11"
   },
   "devDependencies": {
+    "gh-pages": "^2.2.0",
     "webpack-dev-server": "^3.10.3"
   }
 }
