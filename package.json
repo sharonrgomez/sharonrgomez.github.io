@@ -4,11 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "server": "live-server public/",
-    "build": "webpack",
     "dev-server": "webpack-dev-server",
-    "start": "node server/server.js",
-    "deploy": "node deploy.js"
+    "deploy": "webpack && node deploy.js"
   },
   "author": "Sharon Levin",
   "license": "ISC",
@@ -23,9 +20,7 @@
     "@material-ui/icons": "^4.9.1",
     "babel-loader": "^8.1.0",
     "css-loader": "^3.5.3",
-    "express": "^4.17.1",
     "file-loader": "^6.0.0",
-    "live-server": "^1.2.1",
     "node-sass": "^4.14.1",
     "normalize.css": "^8.0.1",
     "react": "^16.13.1",

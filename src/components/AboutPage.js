@@ -1,9 +1,9 @@
 import React from "react";
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
-import GitHubIcon from '@material-ui/icons/GitHub';
-import FacebookIcon from '@material-ui/icons/Facebook';
-import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import GitHubIcon from "@material-ui/icons/GitHub";
+import FacebookIcon from "@material-ui/icons/Facebook";
+import LinkedInIcon from "@material-ui/icons/LinkedIn";
 import me from "../assets/me.png";
 
 const useStyles = makeStyles((theme) => ({
@@ -13,11 +13,11 @@ const useStyles = makeStyles((theme) => ({
         position: "relative",
         textAlign: "center",
         // desktop
-        [theme.breakpoints.up('sm')]: {
+        [theme.breakpoints.up("sm")]: {
             marginLeft: "15rem"
         },
         // mobile
-        [theme.breakpoints.down('xs')]: {
+        [theme.breakpoints.down("xs")]: {
             marginTop: "3rem"
         }
     },
@@ -30,27 +30,27 @@ const useStyles = makeStyles((theme) => ({
         justifyContent: "center"
     },
     about: {
-        [theme.breakpoints.up('md')]: {
+        [theme.breakpoints.up("md")]: {
             padding: "0 20% 0 2rem"
         }
     },
     title: {
-        [theme.breakpoints.down('xs')]: {
+        [theme.breakpoints.down("xs")]: {
             margin: "0",
             padding: "0"
         },
-        [theme.breakpoints.down('md')]: {
+        [theme.breakpoints.down("md")]: {
             fontSize: "3rem"
         }
     },
     paragraph: {
-        [theme.breakpoints.down('xs')]: {
+        [theme.breakpoints.down("xs")]: {
             margin: "0",
             padding: "0"
         }
     },
     image: {
-        [theme.breakpoints.down('xs')]: {
+        [theme.breakpoints.down("xs")]: {
             marginRight: "3rem"
         },
         borderRadius: "50%",
@@ -58,7 +58,7 @@ const useStyles = makeStyles((theme) => ({
         height: "13rem",
     },
     container: {
-        [theme.breakpoints.up('md')]: {
+        [theme.breakpoints.up("md")]: {
             padding: "0 0 0 15%",
             display: "flex",
             alignItems: "center"

@@ -11,7 +11,7 @@ const AppRouter = () => (
         <React.Fragment>
             <SideDrawer />
             <Switch>
-                <Route path="/" component={AboutPage} />
+                <Route path="/" component={AboutPage} exact={true} />
                 <Route path="/portfolio" component={PortfolioPage} />
                 <Route path="/contact" component={ContactPage} />
                 <Route component={NotFoundPage} />

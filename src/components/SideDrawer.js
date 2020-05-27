@@ -66,7 +66,7 @@ const SideDrawer = (props) => {
     const { window } = props;
     const classes = useStyles();
     const [mobileOpen, setMobileOpen] = React.useState(false);
-    const links = ["/about", "/portfolio", "/contact"];
+    const links = ["/", "/portfolio", "/contact"];
 
     const handleDrawerToggle = () => {
         setMobileOpen(!mobileOpen);

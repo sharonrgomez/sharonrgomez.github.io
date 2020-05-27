@@ -1,5 +1,5 @@
 import React from "react";
-import { makeStyles } from '@material-ui/core/styles';
+import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
 
 const useStyles = makeStyles((theme) => ({
@@ -7,11 +7,11 @@ const useStyles = makeStyles((theme) => ({
         flexGrow: 1,
         padding: theme.spacing(3),
         // desktop
-        [theme.breakpoints.up('sm')]: {
+        [theme.breakpoints.up("sm")]: {
             marginLeft: "15rem"
         },
         // mobile
-        [theme.breakpoints.down('xs')]: {
+        [theme.breakpoints.down("xs")]: {
             marginTop: "3rem"
         }
     }
