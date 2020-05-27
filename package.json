@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "webpack",
     "dev-server": "webpack-dev-server",
     "deploy": "webpack && node deploy.js"
   },
@@ -22,7 +23,6 @@
     "css-loader": "^3.5.3",
     "file-loader": "^6.0.0",
     "node-sass": "^4.14.1",
-    "normalize.css": "^8.0.1",
     "react": "^16.13.1",
     "react-dom": "^16.13.1",
     "react-modal": "^3.11.2",

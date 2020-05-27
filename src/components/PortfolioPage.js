@@ -1,54 +1,38 @@
 import React from "react";
 import Card from "@material-ui/core/Card";
-import { makeStyles } from "@material-ui/core/styles";
 import CardActions from "@material-ui/core/CardActions";
 import CardContent from "@material-ui/core/CardContent";
 import Button from "@material-ui/core/Button";
 import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
+import CssBaseline from "@material-ui/core/CssBaseline";
+import { MuiThemeProvider } from "@material-ui/core/styles";
+import { bgTheme } from "../styles/base";
+import portfolioStyles from "../styles/components/PortfolioPage";
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-    flexGrow: 1,
-    marginTop: "1rem"
-  },
-  content: {
-    padding: theme.spacing(3),
-    flexGrow: 1,
-    // desktop
-    [theme.breakpoints.up("sm")]: {
-      marginLeft: "15rem"
-    },
-    // mobile
-    [theme.breakpoints.down("xs")]: {
-      marginTop: "3rem"
-    }
-  },
-  card: {
-    height: "12rem",
-    width: "17rem",
-  },
-}));
 
 const Project = ({ title, desc, srcLink, demoLink }) => {
   return (
     <>
-      <CardContent>
-        <Typography variant="h5">
-          {title}
-        </Typography>
-        <Typography variant="subtitle2">
-          {desc}
-        </Typography>
-        <CardActions>
-          <Button href={srcLink} target="_blank" size="large" color="primary">
-            Github
+      <MuiThemeProvider theme={bgTheme}>
+        <CssBaseline />
+        <CardContent>
+          <Typography variant="h5">
+            {title}
+          </Typography>
+          <Typography variant="subtitle2">
+            {desc}
+          </Typography>
+          <CardActions>
+            <Button href={srcLink} target="_blank" size="large" color="primary">
+              Github
           </Button>
-          <Button href={demoLink} target="_blank" size="large" color="primary">
-            Live demo
+            <Button href={demoLink} target="_blank" size="large" color="primary">
+              Live demo
           </Button>
-        </CardActions>
-      </CardContent>
+          </CardActions>
+        </CardContent>
+      </MuiThemeProvider>
     </>
   );
 };
@@ -113,7 +97,7 @@ const Corgi = () => (
 const projects = [<Gamerank />, <RestfulBlog />, <GithubSite />, <Hoodie />, <Corgi />, <Indecision />];
 
 const Portfolio = () => {
-  const classes = useStyles();
+  const classes = portfolioStyles();
   return (
     <main className={classes.content}>
       <Typography variant="h3">Projects</Typography>

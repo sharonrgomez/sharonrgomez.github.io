@@ -55,7 +55,7 @@ const useStyles = makeStyles((theme) => ({
         color: "white"
     },
     drawerText: {
-        textShadow: "0.08rem 0.08rem 0.3rem #000",
+        textShadow: "0.07rem 0.07rem 0.2rem #000",
         textAlign: "center",
         margin: "0.8rem",
         fontSize: "1.3rem"

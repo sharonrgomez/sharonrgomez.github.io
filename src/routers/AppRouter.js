@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Route, Switch } from "react-router-dom";
+import { HashRouter, Route, Switch } from "react-router-dom";
 import SideDrawer from "../components/SideDrawer";
 import AboutPage from "../components/AboutPage";
 import PortfolioPage from "../components/PortfolioPage";
@@ -7,7 +7,7 @@ import ContactPage from "../components/ContactPage";
 import NotFoundPage from "../components/NotFoundPage";
 
 const AppRouter = () => (
-    <BrowserRouter>
+    <HashRouter basename="/">
         <React.Fragment>
             <SideDrawer />
             <Switch>
@@ -17,7 +17,7 @@ const AppRouter = () => (
                 <Route component={NotFoundPage} />
             </Switch>
         </React.Fragment>
-    </BrowserRouter>
+    </HashRouter>
 );
 
 export default AppRouter;
