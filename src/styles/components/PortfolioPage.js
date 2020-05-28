@@ -1,27 +1,52 @@
 import { makeStyles } from "@material-ui/core/styles";
 
 const portfolioStyles = makeStyles((theme) => ({
-    root: {
-        flexGrow: 1,
-        marginTop: "1rem"
-    },
     content: {
-        padding: theme.spacing(3),
+        padding: "6% 10%",
         flexGrow: 1,
+        // mobile
+        [theme.breakpoints.down("md")]: {
+            marginTop: "3rem",
+            padding: theme.spacing(3)
+        },
         // desktop
         [theme.breakpoints.up("sm")]: {
+            marginTop: "0",
             marginLeft: "15rem"
-        },
-        // mobile
-        [theme.breakpoints.down("xs")]: {
-            marginTop: "3rem"
         }
     },
+    cards: {
+        marginTop: "6%"
+    },
     card: {
-        height: "12rem",
-        width: "17rem",
+        height: "120%",
+        width: "100%",
         boxShadow:
-            "0px 2px 12px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12)"
+            "0px 2px 12px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12)",
+        [theme.breakpoints.down("xs")]: {
+            height: "110%"
+        }
+    },
+    cardContent: {
+        height: "100%",
+        width: "100%",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between"
+    },
+    paddingBottom: {
+        "&:last-child": {
+            paddingBottom: 0
+        }
+    },
+    innerGridMargin: {
+        marginBottom: "3%",
+        [theme.breakpoints.down("sm")]: {
+            marginBottom: "5%"
+        },
+        [theme.breakpoints.down("xs")]: {
+            marginBottom: "1%"
+        }
     }
 }));
 
