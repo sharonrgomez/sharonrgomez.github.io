@@ -8,63 +8,13 @@ import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemText from "@material-ui/core/ListItemText";
 import Toolbar from "@material-ui/core/Toolbar";
-import Typography from "@material-ui/core/Typography";
 import MenuIcon from "@material-ui/icons/Menu";
-import { makeStyles } from "@material-ui/core/styles";
 import { NavLink } from "react-router-dom";
-
-const drawerWidth = 240;
-
-const useStyles = makeStyles((theme) => ({
-    root: {
-        display: "flex"
-    },
-    drawer: {
-        [theme.breakpoints.up("sm")]: {
-            width: drawerWidth,
-            flexShrink: 0
-        }
-    },
-    appBar: {
-        [theme.breakpoints.up("sm")]: {
-            width: `calc(100% - ${drawerWidth}px)`,
-            marginLeft: drawerWidth,
-        },
-        background: "linear-gradient(101deg, rgba(255,252,142,1) 0%, rgba(252,140,140,1) 46%, rgba(130,149,255,1) 100%);"
-
-    },
-    menuButton: {
-        marginRight: theme.spacing(2),
-        [theme.breakpoints.up("sm")]: {
-            display: "none"
-        },
-    },
-    drawerCard: {
-        width: drawerWidth,
-        background: "linear-gradient(0deg, rgba(130,149,255,1) 0%, rgba(252,140,140,1) 46%, rgba(255,252,142,1) 100%)"
-    },
-    content: {
-        flexGrow: 1,
-        padding: theme.spacing(3)
-    },
-    drawerLinksHeight: {
-        marginTop: "4.5rem"
-    },
-    drawerLinks: {
-        textDecoration: "none",
-        color: "white"
-    },
-    drawerText: {
-        textShadow: "0.07rem 0.07rem 0.2rem #000",
-        textAlign: "center",
-        margin: "0.8rem",
-        fontSize: "1.3rem"
-    }
-}));
+import drawerStyles from "../styles/components/SideDrawer";
 
 const SideDrawer = (props) => {
     const { window } = props;
-    const classes = useStyles();
+    const classes = drawerStyles();
     const [mobileOpen, setMobileOpen] = React.useState(false);
     const links = ["/", "/portfolio", "/contact"];
 
@@ -77,7 +27,7 @@ const SideDrawer = (props) => {
 
     const drawer = (
         <List className={classes.drawerLinksHeight}>
-            {["About", "Portfolio", "Contact"].map((text, link) => (
+            {["ABOUT", "PORTFOLIO", "CONTACT"].map((text, link) => (
                 <NavLink className={classes.drawerLinks} to={links[link]} key={text} onClick={handleCloseOnClick}>
                     <ListItem button>
                         <ListItemText disableTypography={true} className={classes.drawerText} primary={text} />

@@ -20,6 +20,23 @@ const contactStyles = makeStyles((theme) => ({
             margin: "2rem 0 0 0",
             width: "100%"
         }
+    },
+    eachIcon: {
+        marginRight: "1rem",
+        color: "#7457bd",
+        fontSize: "2rem"
+    },
+    alignIcons: {
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        fontSize: "1rem"
+    },
+    icons: {
+        marginRight: "1rem",
+        display: "flex",
+        flexDirection: "row",
+        alignItems: "center"
     }
 }));
 

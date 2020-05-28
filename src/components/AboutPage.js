@@ -21,12 +21,12 @@ const AboutPage = () => {
                     <div className={classes.container}>
                         <img src={me} className={classes.image} />
                         <div className={classes.about}>
-                            <Typography className={classes.title} variant="h2">Sharon Levin</Typography>
-                            <Typography className={classes.paragraph} variant="subtitle1" component="p">
+                            <Typography className={classes.title} variant="h2">Sharon L evin</Typography>
+                            <Typography className={classes.paragraph}>
                                 Hi there! I'm a front-end web developer who's passionate about art and technology.
                                 I'm a SUNY Purchase graduate with a Bachelor's in Computer Science. Some hobbies I have include
-                                doodling, gaming, and going to the movies.
-                        </Typography>
+                                doodling, gaming, and going to the movies. Feel free to contact me if you have any questions!
+                            </Typography>
                             <div className={classes.icons}>
                                 <a href="https://www.linkedin.com/in/sharon-rachel-levin/" target="_blank" >
                                     <LinkedInIcon className={classes.iconSize} />

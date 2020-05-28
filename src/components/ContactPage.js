@@ -23,10 +23,10 @@ const ContactPage = () => {
                         <CardContent >
                             <Typography variant="h4">Contact Me</Typography>
                             <Typography variant="subtitle1">Feel free to contact me at any of the following:</Typography>
-                            <div>
-                                <p><EmailIcon />srcbun@gmail.com</p>
-                                <p><PhoneAndroidIcon />(646) 406-0728</p>
-                                <p><LocationOnIcon />White Plains, NY</p>
+                            <div className={classes.alignIcons} >
+                                <p className={classes.icons}><EmailIcon className={classes.eachIcon} />srcbun@gmail.com</p>
+                                <p className={classes.icons}><PhoneAndroidIcon className={classes.eachIcon} />(646) 406-0728</p>
+                                <p className={classes.icons}><LocationOnIcon className={classes.eachIcon} />White Plains, NY</p>
                             </div>
                         </CardContent>
                     </Card>

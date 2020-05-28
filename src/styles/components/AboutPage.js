@@ -15,7 +15,8 @@ const aboutStyles = makeStyles((theme) => ({
     icons: {
         display: "flex",
         alignItems: "center",
-        justifyContent: "center"
+        justifyContent: "space-evenly",
+        margin: "0 24%"
     },
     about: {
         [theme.breakpoints.up("md")]: {
@@ -26,6 +27,8 @@ const aboutStyles = makeStyles((theme) => ({
         }
     },
     title: {
+        fontFamily: "'Galada', cursive",
+        textShadow: "0.19rem 0.19rem 0px #bababa",
         [theme.breakpoints.down("md")]: {
             fontSize: "3rem"
         },
@@ -36,6 +39,7 @@ const aboutStyles = makeStyles((theme) => ({
         }
     },
     paragraph: {
+        fontSize: "1.1rem",
         [theme.breakpoints.down("sm")]: {
             margin: "0",
             padding: "0"
