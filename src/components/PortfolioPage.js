@@ -9,9 +9,9 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import { MuiThemeProvider } from "@material-ui/core/styles";
 import { bgTheme } from "../styles/base";
 import portfolioStyles from "../styles/components/PortfolioPage";
-import Box from '@material-ui/core/Box';
+import Box from "@material-ui/core/Box";
 
-const Project = ({ title, desc, srcLink, demoLink }) => {
+const Project = ({ title, desc, srcLink, demoLink, hasDemo = true }) => {
   const classes = portfolioStyles();
   return (
     <>
@@ -19,8 +19,8 @@ const Project = ({ title, desc, srcLink, demoLink }) => {
         <CssBaseline />
         <CardContent classes={{ root: classes.paddingBottom }} className={classes.cardContent}>
           <div>
-            <Typography>
-              {title}
+            <Typography component={"span"}>
+              <Box fontWeight={500}>{title}</Box>
             </Typography>
             <Typography variant="caption">
               {desc}
@@ -30,10 +30,12 @@ const Project = ({ title, desc, srcLink, demoLink }) => {
             <Button href={srcLink} target="_blank" size="large" color="primary">
               <Box fontWeight={400}>Github</Box>
             </Button>
-            {/* check if prop true */}
-            <Button href={demoLink} target="_blank" size="large" color="primary">
-              <Box fontWeight={400}>Demo</Box>
-            </Button>
+            {
+              hasDemo &&
+              <Button href={demoLink} target="_blank" size="large" color="primary">
+                <Box fontWeight={400}>Demo</Box>
+              </Button>
+            }
           </CardActions>
         </CardContent>
       </MuiThemeProvider>
@@ -69,15 +71,14 @@ const Indecision = () => (
 );
 
 
-const GithubSite = () => {
-  return (
-    <Project
-      title="shaerins.github.io"
-      desc="The page you're on right now!"
-      srcLink="https://github.com/shaerins/shaerins.github.io"
-    />
-  );
-};
+const GithubSite = () => (
+  <Project
+    title="shaerins.github.io"
+    desc="The page you're on right now!"
+    srcLink="https://github.com/shaerins/shaerins.github.io"
+    hasDemo={false}
+  />
+);
 
 const Hoodie = () => (
   <Project
@@ -93,7 +94,7 @@ const Corgi = () => (
     title="corgi museum"
     desc="Explore the wonderful world of corgis. Demonstrates responsiveness using Bootstrap."
     srcLink="https://github.com/shaerins/corgi"
-    demoLink="#"
+    demoLink="https://corgi-museum.web.app/"
   />
 );
 

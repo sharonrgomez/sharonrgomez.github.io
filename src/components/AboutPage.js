@@ -8,7 +8,7 @@ import { MuiThemeProvider } from "@material-ui/core/styles";
 import { bgTheme, baseStyles } from "../styles/base";
 import aboutStyles from "../styles/components/AboutPage";
 import me from "../assets/me.png";
-import clsx from 'clsx';
+import clsx from "clsx";
 
 const AboutPage = () => {
     const baseClasses = baseStyles();

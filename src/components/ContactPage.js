@@ -4,9 +4,9 @@ import { bgTheme, baseStyles } from "../styles/base";
 import contactStyles from "../styles/components/ContactPage";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import { MuiThemeProvider } from "@material-ui/core/styles";
-import PhoneAndroidIcon from '@material-ui/icons/PhoneAndroid';
-import EmailIcon from '@material-ui/icons/Email';
-import LocationOnIcon from '@material-ui/icons/LocationOn';
+import PhoneAndroidIcon from "@material-ui/icons/PhoneAndroid";
+import EmailIcon from "@material-ui/icons/Email";
+import LocationOnIcon from "@material-ui/icons/LocationOn";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 
