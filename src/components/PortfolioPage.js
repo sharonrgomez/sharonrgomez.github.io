@@ -105,7 +105,7 @@ const Portfolio = () => {
   return (
     <main className={classes.content}>
       <Typography variant="h3" className={classes.title}>Projects</Typography>
-      <Typography variant="subtitle1">Check out some of my work:</Typography>
+      <Typography variant="subtitle1" className={classes.desc}>Check out some of my work:</Typography>
       <Grid container className={classes.cards} justify="center" spacing={3}>
         {projects.map((project, index) => (
           <Grid classes={{ item: classes.innerGridMargin }} key={index} item xs={12} sm={6} md={4}>

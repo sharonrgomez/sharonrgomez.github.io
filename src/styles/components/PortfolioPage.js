@@ -6,7 +6,7 @@ const portfolioStyles = makeStyles((theme) => ({
         flexGrow: 1,
         // mobile
         [theme.breakpoints.down("md")]: {
-            marginTop: "3rem",
+            marginTop: "3.5rem",
             padding: theme.spacing(3)
         },
         // desktop
@@ -17,16 +17,19 @@ const portfolioStyles = makeStyles((theme) => ({
     },
     title: {
         fontFamily: "'Galada', cursive",
-        textShadow: "0.19rem 0.19rem 0px #bababa"
+        textShadow: "0.19rem 0.19rem 0px #ffffff"
+    },
+    desc: {
+        textShadow: "1px 3px 1px #fff"
     },
     cards: {
-        marginTop: "6%"
+        marginTop: "5%"
     },
     card: {
         height: "120%",
         width: "100%",
         boxShadow:
-            "0px 2px 12px -1px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12)",
+            "0px 2px 5px 0px rgba(0,0,0,0.2), 0px 1px 1px 0px rgba(0,0,0,0.14), 0px 1px 3px 0px rgba(0,0,0,0.12)",
         [theme.breakpoints.down("xs")]: {
             height: "110%"
         }

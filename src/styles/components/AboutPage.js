@@ -28,7 +28,7 @@ const aboutStyles = makeStyles((theme) => ({
     },
     title: {
         fontFamily: "'Galada', cursive",
-        textShadow: "0.19rem 0.19rem 0px #bababa",
+        textShadow: "0.3rem 0.4rem 0px #ffffff",
         [theme.breakpoints.down("md")]: {
             fontSize: "3rem"
         },
@@ -39,8 +39,11 @@ const aboutStyles = makeStyles((theme) => ({
         }
     },
     paragraph: {
-        fontSize: "1.1rem",
+        fontSize: "1.2rem",
+        textShadow: "0.25rem 0.25rem #fff",
         [theme.breakpoints.down("sm")]: {
+            fontSize: "1rem",
+            textShadow: "0.15rem 0.15rem #fff",
             margin: "0",
             padding: "0"
         }
@@ -48,6 +51,7 @@ const aboutStyles = makeStyles((theme) => ({
     image: {
         borderRadius: "50%",
         width: "13rem",
+        boxShadow: "0.03rem 0.05rem 0.2rem #00000096",
         // screens smaller than xs
         [theme.breakpoints.down("xs")]: {
             width: "8rem"

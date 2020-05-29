@@ -19,7 +19,7 @@ const AboutPage = () => {
                 <CssBaseline />
                 <main className={clsx(classes.textCentered, baseClasses.content)}>
                     <div className={classes.container}>
-                        <img src={me} className={classes.image} />
+                        <img src={me} className={classes.image} aria-label="A photo of Sharon" />
                         <div className={classes.about}>
                             <Typography className={classes.title} variant="h2">Sharon L evin</Typography>
                             <Typography className={classes.paragraph}>
@@ -28,13 +28,13 @@ const AboutPage = () => {
                                 doodling, gaming, and going to the movies. Feel free to contact me if you have any questions!
                             </Typography>
                             <div className={classes.icons}>
-                                <a href="https://www.linkedin.com/in/sharon-rachel-levin/" target="_blank" >
+                                <a href="https://www.linkedin.com/in/sharon-rachel-levin/" target="_blank" title="LinkedIn" >
                                     <LinkedInIcon className={classes.iconSize} />
                                 </a>
-                                <a href="https://github.com/shaerins" target="_blank" >
+                                <a href="https://github.com/shaerins" target="_blank" title="Github" >
                                     <GitHubIcon className={classes.ghIconSize} />
                                 </a>
-                                <a href="https://www.facebook.com/shaerins" target="_blank" >
+                                <a href="https://www.facebook.com/shaerins" target="_blank" title="Facebook" >
                                     <FacebookIcon className={classes.iconSize} />
                                 </a>
                             </div>
