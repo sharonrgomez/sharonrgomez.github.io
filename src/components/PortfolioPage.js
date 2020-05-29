@@ -103,7 +103,7 @@ const Portfolio = () => {
   const classes = portfolioStyles();
   return (
     <main className={classes.content}>
-      <Typography variant="h3">Projects</Typography>
+      <Typography variant="h3" className={classes.title}>Projects</Typography>
       <Typography variant="subtitle1">Check out some of my work:</Typography>
       <Grid container className={classes.cards} justify="center" spacing={3}>
         {projects.map((project, index) => (

@@ -21,7 +21,7 @@ const ContactPage = () => {
                 <main className={baseClasses.content}>
                     <Card className={classes.content} variant="elevation">
                         <CardContent >
-                            <Typography variant="h4">Contact Me</Typography>
+                            <Typography className={classes.title} variant="h3">Contact Me</Typography>
                             <Typography variant="subtitle1">Feel free to contact me at any of the following:</Typography>
                             <div className={classes.alignIcons} >
                                 <p className={classes.icons}><EmailIcon className={classes.eachIcon} />srcbun@gmail.com</p>

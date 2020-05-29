@@ -15,6 +15,10 @@ const portfolioStyles = makeStyles((theme) => ({
             marginLeft: "15rem"
         }
     },
+    title: {
+        fontFamily: "'Galada', cursive",
+        textShadow: "0.19rem 0.19rem 0px #bababa"
+    },
     cards: {
         marginTop: "6%"
     },
