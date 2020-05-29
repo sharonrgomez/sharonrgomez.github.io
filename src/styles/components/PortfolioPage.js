@@ -39,6 +39,11 @@ const portfolioStyles = makeStyles((theme) => ({
             paddingBottom: 0
         }
     },
+    buttonsRight: {
+        display: "inline-flex",
+        justifyContent: "flex-end",
+        paddingRight: 0
+    },
     innerGridMargin: {
         marginBottom: "3%",
         [theme.breakpoints.down("sm")]: {

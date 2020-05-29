@@ -9,6 +9,7 @@ import CssBaseline from "@material-ui/core/CssBaseline";
 import { MuiThemeProvider } from "@material-ui/core/styles";
 import { bgTheme } from "../styles/base";
 import portfolioStyles from "../styles/components/PortfolioPage";
+import Box from '@material-ui/core/Box';
 
 const Project = ({ title, desc, srcLink, demoLink }) => {
   const classes = portfolioStyles();
@@ -18,24 +19,24 @@ const Project = ({ title, desc, srcLink, demoLink }) => {
         <CssBaseline />
         <CardContent classes={{ root: classes.paddingBottom }} className={classes.cardContent}>
           <div>
-          <Typography>
-            {title}
-          </Typography>
-          <Typography variant="caption">
-            {desc}
-          </Typography>
-        </div>
-        <CardActions>
-          <Button href={srcLink} target="_blank" size="large" color="primary">
-            Github
+            <Typography>
+              {title}
+            </Typography>
+            <Typography variant="caption">
+              {desc}
+            </Typography>
+          </div>
+          <CardActions classes={{ root: classes.buttonsRight }}>
+            <Button href={srcLink} target="_blank" size="large" color="primary">
+              <Box fontWeight={400}>Github</Box>
             </Button>
-          {/* check if prop true */}
-          <Button href={demoLink} target="_blank" size="large" color="primary">
-            Demo
+            {/* check if prop true */}
+            <Button href={demoLink} target="_blank" size="large" color="primary">
+              <Box fontWeight={400}>Demo</Box>
             </Button>
-        </CardActions>
+          </CardActions>
         </CardContent>
-    </MuiThemeProvider>
+      </MuiThemeProvider>
     </>
   );
 };
@@ -106,7 +107,7 @@ const Portfolio = () => {
       <Typography variant="subtitle1">Check out some of my work:</Typography>
       <Grid container className={classes.cards} justify="center" spacing={3}>
         {projects.map((project, index) => (
-          <Grid classes={{item: classes.innerGridMargin}} key={index} item xs={12} sm={6} md={4}>
+          <Grid classes={{ item: classes.innerGridMargin }} key={index} item xs={12} sm={6} md={4}>
             <Card className={classes.card}>{project}</Card>
           </Grid>
         ))}
