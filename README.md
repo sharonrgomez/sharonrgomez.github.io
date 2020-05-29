@@ -6,6 +6,5 @@ A homepage/portfolio to display my projects
 
 ## Built With:
 * React
-* Node
+* Material UI
 * Webpack
-* SCSS
