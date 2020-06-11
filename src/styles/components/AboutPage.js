@@ -48,6 +48,11 @@ const aboutStyles = makeStyles((theme) => ({
             padding: "0"
         }
     },
+    link: {
+        textDecoration: "none",
+        color: "#f78b85",
+        fontWeight: "500"
+    },
     image: {
         borderRadius: "50%",
         width: "13rem",

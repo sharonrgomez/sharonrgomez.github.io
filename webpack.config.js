@@ -20,11 +20,16 @@ module.exports = {
             ]
         },
         {
-            test: /\.(png|jpe?g|gif)$/i,
-            loader: 'file-loader',
-            options: {
-                outputPath: 'images',
-            }
+            test: /\.(png|svg|jpe?g|gif|pdf)$/,
+            use: [
+              {
+                loader: 'file-loader',
+                options: {
+                  name: '[name].[ext]', 
+                  outputPath: 'images'
+                }
+              }
+            ]
         },
         {
             test: /\.(woff(2)?|ttf|eot|svg)(\?v=\d+\.\d+\.\d+)?$/,

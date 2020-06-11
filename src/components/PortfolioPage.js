@@ -43,6 +43,15 @@ const Project = ({ title, desc, srcLink, demoLink, hasDemo = true }) => {
   );
 };
 
+const Budget = () => (
+  <Project
+    title="budget trackr"
+    desc="An app that allows you to keep track of your expenses and bills."
+    srcLink="https://github.com/shaerins/budget-trackr"
+    demoLink="https://budgettrackr.herokuapp.com/"
+  />
+);
+
 const Gamerank = () => (
   <Project
     title="gamerank"
@@ -60,16 +69,6 @@ const RestfulBlog = () => (
     demoLink="https://myrestfulblog.herokuapp.com/"
   />
 );
-
-const Indecision = () => (
-  <Project
-    title="indecision"
-    desc="An app that helps you decide what you should do today."
-    srcLink="https://github.com/shaerins/indecision-app"
-    demoLink="https://myindecision.herokuapp.com/"
-  />
-);
-
 
 const GithubSite = () => (
   <Project
@@ -98,7 +97,7 @@ const Corgi = () => (
   />
 );
 
-const projects = [<Gamerank />, <RestfulBlog />, <GithubSite />, <Hoodie />, <Corgi />, <Indecision />];
+const projects = [<Budget />, <Gamerank />, <RestfulBlog />, <Corgi />, <Hoodie />, <GithubSite />];
 
 const Portfolio = () => {
   const classes = portfolioStyles();
