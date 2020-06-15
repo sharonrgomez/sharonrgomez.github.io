@@ -1,29 +1,20 @@
 import React from "react";
 import { Link } from "react-router-dom";
-import { makeStyles } from "@material-ui/core/styles";
 import Typography from "@material-ui/core/Typography";
-
-const useStyles = makeStyles((theme) => ({
-    content: {
-        flexGrow: 1,
-        padding: theme.spacing(3),
-        // desktop
-        [theme.breakpoints.up("sm")]: {
-            marginLeft: "15rem"
-        },
-        // mobile
-        [theme.breakpoints.down("xs")]: {
-            marginTop: "3rem"
-        }
-    }
-}));
+import { baseStyles } from "../styles/base";
+import notFoundStyles from "../styles/components/NotFoundPage";
 
 const NotFoundPage = () => {
-    const classes = useStyles();
+    const baseClasses = baseStyles();
+    const classes = notFoundStyles();
     return (
-        <main className={classes.content}>
-            <Typography variant="h3">404 - Page Not Found</Typography>
-            <Typography variant="subtitle1"><Link to="/">Back to Dashboard</Link></Typography>
+        <main className={baseClasses.content}>
+            <div className={classes.uhOhContent}>
+                <Typography className={classes.title} variant="h1">404</Typography>
+                <Typography className={classes.subtitle} variant="h3">Page Not Found</Typography>
+                <Typography className={classes.message} variant="subtitle1">Sorry about that, looks like this page doesn't exist.</Typography>
+                <Typography variant="subtitle2"><Link to="/">Back to the homepage</Link></Typography>
+            </div>
         </main>
     );
 };
