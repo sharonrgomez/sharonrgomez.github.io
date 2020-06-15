@@ -4,6 +4,13 @@ import Grid from "@material-ui/core/Grid";
 import Typography from "@material-ui/core/Typography";
 import Project from "./Project";
 import portfolioStyles from "../styles/components/PortfolioPage";
+import node from "../assets/node.png";
+import react from "../assets/react.png";
+import jquery from "../assets/jquery.png";
+import bootstrap from "../assets/bootstrap.png";
+import sass from "../assets/sass.png";
+import material from "../assets/material.png";
+import semantic from "../assets/semantic.png";
 
 const Budget = () => (
   <Project
@@ -11,6 +18,8 @@ const Budget = () => (
     desc="An app that allows you to keep track of your expenses and bills."
     srcLink="https://github.com/shaerins/budget-trackr"
     demoLink="https://budgettrackr.herokuapp.com/"
+    mainIcon={react}
+    secondaryIcon={sass}
   />
 );
 
@@ -20,6 +29,8 @@ const Gamerank = () => (
     desc="A web app where people can rank and share their opinions on their favorite video games."
     srcLink="https://github.com/shaerins/gamerank"
     demoLink="https://mygamerank.herokuapp.com/"
+    mainIcon={node}
+    secondaryIcon={bootstrap}
   />
 );
 
@@ -29,6 +40,8 @@ const RestfulBlog = () => (
     desc="A blog where you can gather your thoughts. Demonstrates RESTful routing!"
     srcLink="https://github.com/shaerins/RESTful-Blog-App"
     demoLink="https://myrestfulblog.herokuapp.com/"
+    mainIcon={node}
+    secondaryIcon={semantic}
   />
 );
 
@@ -38,6 +51,8 @@ const GithubSite = () => (
     desc="The page you're on right now!"
     srcLink="https://github.com/shaerins/shaerins.github.io"
     hasDemo={false}
+    mainIcon={react}
+    secondaryIcon={material}
   />
 );
 
@@ -47,6 +62,8 @@ const Hoodie = () => (
     desc="Find out if the weather is currently suitable for wearing a hoodie outside."
     srcLink="https://github.com/shaerins/hoodie"
     demoLink="https://hoodie-2c3aa.web.app/"
+    mainIcon={jquery}
+    secondaryIcon={material}
   />
 );
 
@@ -56,6 +73,7 @@ const Corgi = () => (
     desc="Explore the wonderful world of corgis. Demonstrates responsiveness using Bootstrap."
     srcLink="https://github.com/shaerins/corgi"
     demoLink="https://corgi-museum.web.app/"
+    mainIcon={bootstrap}
   />
 );
 

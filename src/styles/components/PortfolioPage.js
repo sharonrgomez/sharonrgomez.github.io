@@ -51,6 +51,16 @@ const portfolioStyles = makeStyles((theme) => ({
         justifyContent: "flex-end",
         paddingRight: 0
     },
+    icons: {
+        display: "inline-flex",
+        paddingRight: "0",
+        paddingLeft: "0",
+        justifyContent: "space-between"
+    },
+    image: {
+        width: "1.4rem",
+        margin: "0.2rem"
+    },
     innerGridMargin: {
         marginBottom: "3%",
         [theme.breakpoints.down("sm")]: {
