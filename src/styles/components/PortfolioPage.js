@@ -54,7 +54,7 @@ const portfolioStyles = makeStyles((theme) => ({
     innerGridMargin: {
         marginBottom: "3%",
         [theme.breakpoints.down("sm")]: {
-            marginBottom: "5%"
+            marginBottom: "1.8rem"
         },
         [theme.breakpoints.down("xs")]: {
             marginBottom: "1%"
