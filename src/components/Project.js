@@ -9,7 +9,7 @@ import Box from "@material-ui/core/Box";
 import portfolioStyles from "../styles/components/PortfolioPage";
 import { bgTheme } from "../styles/base";
 
-const Project = ({ title, desc, srcLink, demoLink, hasDemo = true, mainIcon, secondaryIcon }) => {
+const Project = ({ title, desc, srcLink, demoLink, hasDemo = true, mainIcon, secondaryIcon, mainIconDesc, secondaryIconDesc }) => {
     const classes = portfolioStyles();
     return (
         <>
@@ -24,8 +24,11 @@ const Project = ({ title, desc, srcLink, demoLink, hasDemo = true, mainIcon, sec
                     </Typography>
                     <CardActions classes={{ root: classes.icons }}>
                         <div>
-                            <img className={classes.image} src={mainIcon} />
-                            {secondaryIcon && <img className={classes.image} src={secondaryIcon} />}
+                            <img className={classes.image} src={mainIcon} title={mainIconDesc} />
+                            {
+                                secondaryIcon &&
+                                <img className={classes.image} src={secondaryIcon} title={secondaryIconDesc} />
+                            }
 
                         </div>
                         <div>

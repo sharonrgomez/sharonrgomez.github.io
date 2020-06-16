@@ -1,6 +1,5 @@
 import React from "react";
 import Typography from "@material-ui/core/Typography";
-import contactStyles from "../styles/components/ContactPage";
 import CssBaseline from "@material-ui/core/CssBaseline";
 import { MuiThemeProvider } from "@material-ui/core/styles";
 import PhoneAndroidIcon from "@material-ui/icons/PhoneAndroid";
@@ -9,6 +8,7 @@ import LocationOnIcon from "@material-ui/icons/LocationOn";
 import Card from "@material-ui/core/Card";
 import CardContent from "@material-ui/core/CardContent";
 import { bgTheme, baseStyles } from "../styles/base";
+import contactStyles from "../styles/components/ContactPage";
 
 const ContactPage = () => {
     const baseClasses = baseStyles();
