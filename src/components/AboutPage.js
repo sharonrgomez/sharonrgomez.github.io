@@ -20,7 +20,7 @@ const AboutPage = () => {
                 <CssBaseline />
                 <main className={clsx(classes.textCentered, baseClasses.content)}>
                     <div className={classes.container}>
-                        <img src={me} className={classes.image} aria-label="A photo of Sharon" />
+                        <img src={me} className={classes.image} alt="A photo of Sharon" />
                         <div className={classes.about}>
                             <Typography className={classes.title} variant="h2">Sharon L evin</Typography>
                             <Typography className={classes.paragraph}>

@@ -6,7 +6,6 @@ import Project from "./Project";
 import portfolioStyles from "../styles/components/PortfolioPage";
 import node from "../assets/icons/node.png";
 import react from "../assets/icons/react.png";
-import jquery from "../assets/icons/jquery.png";
 import bootstrap from "../assets/icons/bootstrap.png";
 import sass from "../assets/icons/sass.png";
 import material from "../assets/icons/material.png";
@@ -66,14 +65,14 @@ const GithubSite = () => (
 
 const Hoodie = () => (
   <Project
-    title="hoodie"
+    title="Can I Wear a Hoodie Today"
     desc="Find out if the weather is currently suitable for wearing a hoodie outside."
     srcLink="https://github.com/shaerins/hoodie"
-    demoLink="https://hoodie-2c3aa.web.app/"
-    mainIcon={jquery}
-    mainIconDesc={iconDescs.jquery}
-    secondaryIcon={material}
-    secondaryIconDesc={iconDescs.material}
+    demoLink="https://caniwearahoodie.web.app/"
+    mainIcon={react}
+    mainIconDesc={iconDescs.react}
+    secondaryIcon={sass}
+    secondaryIconDesc={iconDescs.sass}
   />
 );
 
