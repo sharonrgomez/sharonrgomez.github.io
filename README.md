@@ -10,4 +10,3 @@ This is a portfolio where some of my projects live.
 * React
 * React Router
 * Material UI
-* SCSS
