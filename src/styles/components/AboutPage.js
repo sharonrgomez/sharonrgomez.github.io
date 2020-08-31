@@ -40,11 +40,11 @@ const aboutStyles = makeStyles((theme) => ({
     },
     paragraph: {
         fontSize: "1.2rem",
-        textShadow: "0.25rem 0.25rem #fff",
+        textShadow: "0.25rem 0.25rem #dddddd",
         margin: "0 0 0.5rem 0",
         [theme.breakpoints.down("sm")]: {
             fontSize: "1rem",
-            textShadow: "0.15rem 0.15rem #e9e9e9",
+            textShadow: "0.15rem 0.15rem #dddddd",
             margin: "0 0 0.8rem 0",
             padding: "0"
         }
