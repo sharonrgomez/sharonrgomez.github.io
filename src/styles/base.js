@@ -4,7 +4,7 @@ import { makeStyles } from "@material-ui/core/styles";
 const bgTheme = createMuiTheme({
     palette: {
         background: {
-            default: "rgba(77,125,125,0.06)"
+            default: "rgba(77,125,125,0.03)"
         }
     }
 });

@@ -27,8 +27,8 @@ const aboutStyles = makeStyles((theme) => ({
         }
     },
     title: {
-        fontFamily: "'Galada', cursive",
-        textShadow: "0.3rem 0.4rem 0px #ffffff",
+        fontFamily: "'Galada'",
+        textShadow: "0.3rem 0.4rem 0px #d3d3d3",
         [theme.breakpoints.down("md")]: {
             fontSize: "3rem"
         },
@@ -41,10 +41,11 @@ const aboutStyles = makeStyles((theme) => ({
     paragraph: {
         fontSize: "1.2rem",
         textShadow: "0.25rem 0.25rem #fff",
+        margin: "0 0 0.5rem 0",
         [theme.breakpoints.down("sm")]: {
             fontSize: "1rem",
-            textShadow: "0.15rem 0.15rem #fff",
-            margin: "0",
+            textShadow: "0.15rem 0.15rem #e9e9e9",
+            margin: "0 0 0.8rem 0",
             padding: "0"
         }
     },
@@ -57,9 +58,13 @@ const aboutStyles = makeStyles((theme) => ({
         borderRadius: "50%",
         width: "13rem",
         boxShadow: "0.03rem 0.05rem 0.2rem #00000096",
+        // screens smaller than sm
+        [theme.breakpoints.down("sm")]: {
+            marginBottom: "0.8rem"
+        },
         // screens smaller than xs
         [theme.breakpoints.down("xs")]: {
-            width: "8rem"
+            width: "10rem"
         }
     },
     container: {

@@ -20,11 +20,11 @@ const ContactPage = () => {
                 <CssBaseline />
                 <main className={baseClasses.content}>
                     <Card className={classes.content} variant="elevation">
-                        <CardContent >
+                        <CardContent>
                             <Typography className={classes.title} variant="h3">Contact Me</Typography>
                             <Typography variant="subtitle1">Feel free to contact me at either of the following:</Typography>
                             <div className={classes.alignIcons} >
-                                <p className={classes.icons}><EmailIcon className={classes.eachIcon} />srcbun@gmail.com</p>
+                                <p className={classes.icons}><EmailIcon className={classes.eachIcon} />levinsrc@gmail.com</p>
                                 <p className={classes.icons}><PhoneAndroidIcon className={classes.eachIcon} />(646) 406-0728</p>
                                 <p className={classes.icons}><LocationOnIcon className={classes.eachIcon} />White Plains, NY</p>
                             </div>

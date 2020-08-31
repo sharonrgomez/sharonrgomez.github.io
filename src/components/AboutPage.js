@@ -9,7 +9,6 @@ import clsx from "clsx";
 import { bgTheme, baseStyles } from "../styles/base";
 import aboutStyles from "../styles/components/AboutPage";
 import me from "../assets/me.png";
-import resume from "../assets/resume.pdf";
 
 const AboutPage = () => {
     const baseClasses = baseStyles();
@@ -20,15 +19,14 @@ const AboutPage = () => {
                 <CssBaseline />
                 <main className={clsx(classes.textCentered, baseClasses.content)}>
                     <div className={classes.container}>
-                        <img src={me} className={classes.image} alt="A photo of Sharon" />
+                        <img src={me} className={classes.image} alt="A headshot of Sharon" />
                         <div className={classes.about}>
                             <Typography className={classes.title} variant="h2">Sharon L evin</Typography>
                             <Typography className={classes.paragraph}>
-                                Hi there! I'm a front-end web developer who's passionate about art and technology.
-                                I'm a SUNY Purchase graduate with a Bachelor's in Computer Science. Some hobbies I have include
-                                doodling, gaming, and going to the movies. Here's a link to my
-                                <a className={classes.link} href={resume} target="_blank"> resume</a>,
-                                feel free to contact me if you have any questions!
+                                Hi there! I'm a front-end developer who's passionate about art and technology.
+                                I grew up in the Bronx but currently reside in White Plains.
+                                Some hobbies I have include doodling, playing video games, and going to the movies.
+                                Feel free to hit me up if you have any questions!
                             </Typography>
                             <div className={classes.icons}>
                                 <a href="https://www.linkedin.com/in/sharon-rachel-levin/" target="_blank" title="LinkedIn" >
