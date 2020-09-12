@@ -9,7 +9,10 @@ import Box from "@material-ui/core/Box";
 import portfolioStyles from "../styles/components/PortfolioPage";
 import { bgTheme } from "../styles/base";
 
-const Project = ({ title, desc, srcLink, demoLink, hasDemo = true, mainIcon, secondaryIcon, mainIconDesc, secondaryIconDesc }) => {
+const Project = ({
+    title, desc, srcLink, demoLink, hasDemo = true, mainIcon,
+    secondaryIcon, mainIconDesc, secondaryIconDesc, thirdIcon, thirdIconDesc
+}) => {
     const classes = portfolioStyles();
     return (
         <>
@@ -28,6 +31,11 @@ const Project = ({ title, desc, srcLink, demoLink, hasDemo = true, mainIcon, sec
                             {
                                 secondaryIcon &&
                                 <img className={classes.image} src={secondaryIcon} title={secondaryIconDesc} />
+                            }
+                            {
+                                thirdIcon &&
+                                <img className={classes.image} src={thirdIcon} title={thirdIconDesc} />
+
                             }
 
                         </div>

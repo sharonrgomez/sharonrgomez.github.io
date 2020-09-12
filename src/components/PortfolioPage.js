@@ -8,7 +8,6 @@ import node from "../assets/icons/node.png";
 import react from "../assets/icons/react.png";
 import bootstrap from "../assets/icons/bootstrap.png";
 import sass from "../assets/icons/sass.png";
-import material from "../assets/icons/material.png";
 import semantic from "../assets/icons/semantic.png";
 
 const Budget = () => (
@@ -40,7 +39,7 @@ const Gamerank = () => (
 const RestfulBlog = () => (
   <Project
     title="restfulblog"
-    desc="A blog where you can gather your thoughts. Demonstrates RESTful routing!"
+    desc="A simple blog that demonstrates RESTful routing!"
     srcLink="https://github.com/shaerins/RESTful-Blog-App"
     demoLink="https://myrestfulblog.herokuapp.com/"
     mainIcon={node}
@@ -50,16 +49,18 @@ const RestfulBlog = () => (
   />
 );
 
-const GithubSite = () => (
+const RinBlog = () => (
   <Project
-    title="shaerins.github.io"
-    desc="The page you're on right now!"
-    srcLink="https://github.com/shaerins/shaerins.github.io"
-    hasDemo={false}
+    title="rinblog"
+    desc="A blogging app that gives you the freedom to unleash your mind."
+    srcLink="https://github.com/shaerins/rinblog"
+    demoLink="https://rin-blog.web.app/"
     mainIcon={react}
     mainIconDesc={iconDescs.react}
-    secondaryIcon={material}
-    secondaryIconDesc={iconDescs.material}
+    secondaryIcon={semantic}
+    secondaryIconDesc={iconDescs.semantic}
+    thirdIcon={sass}
+    thirdIconDesc={iconDescs.sass}
   />
 );
 
@@ -97,7 +98,7 @@ const iconDescs = {
   semantic: "Semantic UI"
 }
 
-const projects = [<Budget />, <Gamerank />, <RestfulBlog />, <Corgi />, <Hoodie />, <GithubSite />];
+const projects = [<RinBlog />, <Budget />, <Gamerank />, <Hoodie />, <Corgi />, <RestfulBlog />];
 
 const Portfolio = () => {
   const classes = portfolioStyles();

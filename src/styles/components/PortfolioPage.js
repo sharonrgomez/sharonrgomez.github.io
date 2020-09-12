@@ -4,6 +4,7 @@ const portfolioStyles = makeStyles((theme) => ({
     content: {
         padding: "6% 10%",
         flexGrow: 1,
+        minWidth: "20rem",
         // mobile
         [theme.breakpoints.down("md")]: {
             marginTop: "3.5rem",
@@ -35,6 +36,7 @@ const portfolioStyles = makeStyles((theme) => ({
         }
     },
     cardContent: {
+        minHeight: "8rem",
         height: "100%",
         width: "100%",
         display: "flex",
