@@ -1,96 +1,103 @@
-import React from "react";
-import { NavLink } from "react-router-dom";
-import AppBar from "@material-ui/core/AppBar";
-import CssBaseline from "@material-ui/core/CssBaseline";
-import Drawer from "@material-ui/core/Drawer";
-import Hidden from "@material-ui/core/Hidden";
-import IconButton from "@material-ui/core/IconButton";
-import List from "@material-ui/core/List";
-import ListItem from "@material-ui/core/ListItem";
-import ListItemText from "@material-ui/core/ListItemText";
-import Toolbar from "@material-ui/core/Toolbar";
-import MenuIcon from "@material-ui/icons/Menu";
-import drawerStyles from "../styles/components/SideDrawer";
+import React from 'react'
+import {NavLink} from 'react-router-dom'
 
-const SideDrawer = (props) => {
-    const { window } = props;
-    const classes = drawerStyles();
-    const [mobileOpen, setMobileOpen] = React.useState(false);
-    const links = ["/", "/portfolio", "/contact"];
+import AppBar from '@material-ui/core/AppBar'
+import CssBaseline from '@material-ui/core/CssBaseline'
+import Drawer from '@material-ui/core/Drawer'
+import Hidden from '@material-ui/core/Hidden'
+import IconButton from '@material-ui/core/IconButton'
+import List from '@material-ui/core/List'
+import ListItem from '@material-ui/core/ListItem'
+import ListItemText from '@material-ui/core/ListItemText'
+import Toolbar from '@material-ui/core/Toolbar'
+
+import MenuIcon from '@material-ui/icons/Menu'
+
+import {drawerStyles} from '../styles/components/SideDrawer'
+
+export const SideDrawer = ({window, ...props}) => {
+    const classes = drawerStyles()
+    
+    const [mobileOpen, setMobileOpen] = React.useState(false)
+    const links = ['/', '/portfolio', '/contact']
 
     const handleDrawerToggle = () => {
-        setMobileOpen(!mobileOpen);
-    };
-    const handleCloseOnClick = () => {
-        setMobileOpen(false);
+        setMobileOpen(!mobileOpen)
+    }
+
+    const handleClose = () => {
+        setMobileOpen(false)
     }
 
     const drawer = (
         <List className={classes.drawerLinksHeight}>
-            {["ABOUT", "PORTFOLIO", "CONTACT"].map((text, link) => (
-                <NavLink className={classes.drawerLinks} to={links[link]} key={text} onClick={handleCloseOnClick}>
+            {['ABOUT', 'PORTFOLIO', 'CONTACT'].map((text, link) => (
+                <NavLink 
+                    className={classes.drawerLinks} 
+                    key={text} 
+                    onClick={handleClose}
+                    to={links[link]} 
+                >
                     <ListItem button>
-                        <ListItemText disableTypography={true} className={classes.drawerText} primary={text} />
+                        <ListItemText 
+                            className={classes.drawerText} 
+                            disableTypography={true} 
+                            primary={text} 
+                        />
                     </ListItem>
                 </NavLink>
             ))}
         </List>
-    );
+    )
 
-    const container = window !== undefined ? () => window().document.body : undefined;
+    const container = window !== undefined ? () => window().document.body : undefined
 
     return (
         <div className={classes.root}>
             <CssBaseline />
+
             <Hidden smUp>
-                <AppBar className={classes.appBar} position="fixed" >
+                <AppBar className={classes.appBar} position='fixed' >
                     <Toolbar>
                         <IconButton
-                            color="inherit"
-                            edge="start"
-                            onClick={handleDrawerToggle}
                             className={classes.menuButton}
+                            color='inherit'
+                            edge='start'
+                            onClick={handleDrawerToggle}
                         >
                             <MenuIcon />
                         </IconButton>
                     </Toolbar>
                 </AppBar>
             </Hidden>
+
             <nav className={classes.drawer}>
                 {/* hide drawer on mobile */}
-                <Hidden smUp implementation="css">
+                <Hidden smUp implementation='css'>
                     <Drawer
+                        anchor='left'
+                        classes={{paper: classes.drawerCard}}
                         container={container}
-                        variant="temporary"
-                        anchor="left"
-                        open={mobileOpen}
+                        ModalProps={{keepMounted: true}}
                         onClose={handleDrawerToggle}
-                        classes={{
-                            paper: classes.drawerCard,
-                        }}
-                        ModalProps={{
-                            keepMounted: true,
-                        }}
+                        open={mobileOpen}
+                        variant='temporary'
                     >
                         {drawer}
                     </Drawer>
                 </Hidden>
 
                 {/* show drawer on desktop */}
-                <Hidden xsDown implementation="css">
+                <Hidden xsDown implementation='css'>
                     <Drawer
-                        classes={{
-                            paper: classes.drawerCard,
-                        }}
-                        variant="permanent"
+                        classes={{paper: classes.drawerCard}}
                         open
+                        variant='permanent'
                     >
                         {drawer}
                     </Drawer>
                 </Hidden>
             </nav>
         </div>
-    );
-};
-
-export default SideDrawer;
+    )
+}

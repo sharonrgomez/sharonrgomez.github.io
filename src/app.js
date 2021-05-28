@@ -1,6 +1,8 @@
-import React from "react";
-import ReactDOM from "react-dom";
-import AppRouter from "./routers/AppRouter";
-import 'typeface-roboto';
+import React from 'react'
+import ReactDOM from 'react-dom'
 
-ReactDOM.render(<AppRouter />, document.getElementById("app"));
+import 'typeface-roboto'
+
+import {AppRouter} from './routers/AppRouter'
+
+ReactDOM.render(<AppRouter />, document.getElementById('app'))
