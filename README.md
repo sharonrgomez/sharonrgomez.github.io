@@ -1,4 +1,4 @@
-# shaerins.github.io
+# sharonrgomez.github.io
 A homepage/portfolio to display my projects
 
 ### View
