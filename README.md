@@ -1,10 +1,10 @@
-# shaerins.github.io
+# sharonrgomez.github.io
 
 This is a portfolio where some of my projects live.
 
 ## View
 
-[https://shaerins.github.io/](https://shaerins.github.io/)
+[https://sharonrgomez.github.io/](https://sharonrgomez.github.io/)
 
 ## Built with
 * React
